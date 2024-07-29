@@ -1,0 +1,321 @@
+/* Reset de Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+header {
+    background: white; /* Cambia al color primario que quieras usar */
+    height: 80px;
+    align-items: center;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px;
+}
+header .logo img {
+    width: 800px;
+    height: 70px;
+    margin-top: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    margin: 0 10px;
+    align-items: center;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+}
+header nav .ctabutton {
+    background: #6B8E7E; /* Color de botón */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+footer {
+    background-color: white;
+    color:#6B8E7E;
+    font-weight: bold;
+    text-align:center;
+    width: 100%;
+    height: 38px;
+    border-radius: 10px;
+}
+.flexcontainer{
+    width: 100%;
+    height: 100%;
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.div1{
+    width: 100%;
+    height: 500px;
+
+}
+div.div2{
+    width: 100%;
+    height: 400px;
+    background-color:white;
+}
+div.div3{
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    }
+
+div.div4{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.imagen1{
+    height: 300px;
+    width: 600px;
+margin-top: 30px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%; /* Altura completa del viewport */
+    overflow: hidden;
+    height: 100%;
+  
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el video quede en el fondo */
+}
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+}
+.hero-content {
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-content h1 {
+    font-size: 2.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+.hero-content h2 {
+    font-size: 1.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 20px;
+    margin-top: 50px;
+    color:black;
+    background-color: white; /* Ajusta el color según tus necesidades */
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 60px; /* Establece la altura de los botones */
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    transition: box-shadow .15s,transform .15s;
+}
+
+.cta-button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.cta-button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.cta-button:hover {
+    background-color:  #6B8E7E; /* Color de fondo en hover */
+    transform: translateY(-2px);
+}
+/* Servicios Destacados */
+
+.services-container {
+    padding: 20px; /* Espacio interior del contenedor */
+    background-color:white;
+}
+
+.services {
+    max-width: 1200px; /* Ancho máximo del contenedor ajustado */
+    margin: 0 auto; /* Centra el contenedor */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px; /* Relleno interno */
+    display: flex;
+    flex-wrap: wrap; /* Permite ajustar los elementos en varias filas */
+    gap: 20px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Incluye relleno y borde en el ancho total */
+}
+
+.services-heading {
+    text-align: center;
+    font-size: 1.4em; /* Tamaño de fuente del título */
+    color: #2c3e50; /* Color oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold;
+    width: 100%; /* Asegura que el título ocupe toda la fila */
+}
+
+.service-item {
+    background: #f9f9f9; /* Fondo gris claro para los ítems */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Relleno interno */
+    flex: 1 1 calc(50% - 20px); /* Ancho en dos columnas con espacio entre ellas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-sizing: border-box; /* Incluye relleno y borde en el ancho total */
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.service-title {
+    font-size: 1.1em; /* Tamaño de fuente del título */
+    color: #34495e; /* Color oscuro */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.service-description {
+    font-size: 0.9em; /* Tamaño de fuente de la descripción */
+    color: #7f8c8d; /* Color gris claro */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Cómo Funciona */
+.how-it-works {
+    background:white; /* Fondo gris claro */
+    padding: 10px; /* Reducción del relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si el contenido es demasiado ancho */
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 1.5em; /* Tamaño de fuente reducido */
+    color: #333; /* Color oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.steps {
+    display: flex;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
+    gap: 10px; /* Espacio entre los pasos */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.step {
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Relleno reducido */
+    min-width: 150px; /* Ancho mínimo para cada paso */
+    flex: 1; /* Permite que los pasos se expandan igualitariamente */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    text-align: center; /* Centra el texto */
+}
+
+.step:hover {
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.step h3 {
+    font-size: 1.2em; /* Tamaño de fuente del subtítulo */
+    color: #6B8E7E; /* Color azul para el subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+}
+
+.step p {
+    font-size: 0.9em; /* Tamaño de fuente del texto */
+    color: #555; /* Color gris oscuro */
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+
+
+/* Testimonios */
+.testimonials {
+    padding: 40px 20px;
+}
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.testimonial {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Contacto */
+.contact {
+    background: #fafafa;
+    padding: 40px 20px;
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    padding: 10px 20
+}
