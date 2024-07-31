@@ -1,11 +1,15 @@
-/* Reset de Estilos Básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+.contenedorglobal{
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 /* Header */
 header {
@@ -288,48 +292,77 @@ margin-top: 30px;
     line-height: 1.4; /* Espaciado entre líneas */
 }
 
-
-
-/* Testimonios */
-.testimonials {
-    padding: 40px 20px;
-}
-.testimonials h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.testimonial {
-    margin: 20px 0;
-    text-align: center;
+#bar, .icon-menu3 {
+    display: none;
 }
 
-/* Contacto */
-.contact {
-    background: #fafafa;
-    padding: 40px 20px;
-}
-.contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-.contact label {
+@media screen and (max-width:600px){
+    #bar{
+        width: 100%;
+        height: 70px;
+        position:fixed;
+        top:0;
+        background: color rgb(126, 113, 113);
+        z-index: 10000;
+        display: none;
+    }
+.icon-menu3{
     display: block;
-    margin: 10px 0 5px;
+    color: rgb(31, 28, 28);
+    font-size: 30px;
+    left: 20px;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 100000;
 }
-.contact input, .contact textarea {
+header{
+    height: 70px;
+    position: fixed;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    top:0;
+    z-index: 10;
 }
-.contact button {
-    background: #00796b;
-    color: #fff;
-    border: none;
-    padding: 10px 20
+.container{
+    height:60%;
+    width:49% ;
+    position: fixed;
+    margin-top: 20px;
+    transform: translateX(-100%);
+    transition: all 0.7s ease-in;
+    background-color: #6B8E7E;
+}
+.logo{
+display: none;
+}
+
+header .container ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding del contenedor de la lista */
+    margin: 0; /* Elimina el margin del contenedor de la lista */
+    display: flex; /* Usa flexbox para el contenedor de la lista */
+    flex-direction: column; /* Alinea los elementos de la lista en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+header .container ul li {
+    display: block; /* Asegura que los elementos de la lista se comporten como bloques */
+    border-bottom: #6B8E7E solid 1px; /* Línea debajo de cada ítem */
+    padding: 10px 0; /* Padding arriba y abajo de los ítems */
+    width: 80%; /* Ancho del 80% para los elementos de la lista */
+    text-align: center; /* Centra el texto dentro de cada ítem */
+    margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
+}
+#bar:checked ~ .container{
+    transform: translateX(0%);
+    transition: all 1.0s ease-out;
+    background-color: white;
+}
+.hero-video{
+    display: none;
+}
+.hero-content{
+    color: black;
+    position:
+}
 }
