@@ -59,12 +59,10 @@ footer {
     height: 38px;
     border-radius: 10px;
 }
-.flexcontainer{
-    width: 100%;
-    height: 100%;
-    border: solid black;
+.flexcontainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
 }
 
 div.div1{
@@ -297,18 +295,23 @@ margin-top: 30px;
 }
 
 @media screen and (max-width:600px){
+    .flexcontainer {
+        flex-direction: column; /* Cambia la dirección del contenedor flex a columna para apilar elementos verticalmente */
+    }
+   
     #bar{
         width: 100%;
-        height: 70px;
+        height: 50px;
         position:fixed;
         top:0;
-        background: color rgb(126, 113, 113);
         z-index: 10000;
         display: none;
+        
     }
 .icon-menu3{
     display: block;
-    color: rgb(31, 28, 28);
+    color: black;
+    height: 200px;
     font-size: 30px;
     left: 20px;
     margin-top: 18px;
@@ -316,20 +319,19 @@ margin-top: 30px;
     z-index: 100000;
 }
 header{
-    height: 70px;
-    position: fixed;
-    width: 100%;
+    height: 20px;
     top:0;
     z-index: 10;
+    position: relative;
+    margin-bottom: 10px;
 }
 .container{
-    height:60%;
-    width:49% ;
+    height:100%;
+    width:49%;
     position: fixed;
     margin-top: 20px;
     transform: translateX(-100%);
-    transition: all 0.7s ease-in;
-    background-color: #6B8E7E;
+    background-color: black;
 }
 .logo{
 display: none;
@@ -343,26 +345,67 @@ header .container ul {
     flex-direction: column; /* Alinea los elementos de la lista en una columna */
     align-items: center; /* Centra los elementos horizontalmente */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    color: black;
+    background-color: white;
+    
 }
 
 header .container ul li {
     display: block; /* Asegura que los elementos de la lista se comporten como bloques */
-    border-bottom: #6B8E7E solid 1px; /* Línea debajo de cada ítem */
+    border-bottom:black solid 1px; /* Línea debajo de cada ítem */
     padding: 10px 0; /* Padding arriba y abajo de los ítems */
     width: 80%; /* Ancho del 80% para los elementos de la lista */
     text-align: center; /* Centra el texto dentro de cada ítem */
+    background-color: white;
     margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
 }
 #bar:checked ~ .container{
     transform: translateX(0%);
-    transition: all 1.0s ease-out;
+    transition: all 0.8s ease-out;
+    transition: all 0.8s ease-in;
     background-color: white;
+    height: 500px;
+    width: 150px;
+    position: fixed;
 }
+
 .hero-video{
     display: none;
 }
-.hero-content{
+.hero-content h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: px;
     color: black;
-    position:
+}
+
+.hero-content h2 {
+    font-size: 1.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    color: black;
+}
+.hero-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cta-button {
+    display: none;
+}
+.hero{
+    margin-top: 20px;
+    height: 300px;
+    margin-bottom: 1px;
+    border: solid black;
+}
+.div1{
+    height: 10px;
+    margin-bottom: 1px;
+    border: solid black;
+}
+.div2{
+    height: 500px;
 }
 }
