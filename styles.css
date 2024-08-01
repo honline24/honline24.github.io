@@ -6,33 +6,40 @@
 }
 .contenedorglobal{
     width: 100%;
+    height: 100%;
     max-width: 2000px;
     margin: 0 auto;
     overflow: hidden;
+    border: solid black;
 }
 
 /* Header */
-header {
+.header {
     background: white; /* Cambia al color primario que quieras usar */
-    height: 80px;
+    width: 100%;
+    height: 10%;
     align-items: center;
+    border: solid black;
 }
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
+    border:solid black;
 }
 header .logo img {
-    width: 800px;
-    height: 70px;
+    width: 100%;
     margin-top: 10px;
+    border:solid black;
 }
 header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    border:solid black;
 }
 header nav ul li {
     margin: 0 10px;
@@ -44,54 +51,49 @@ header nav ul li a {
     font-weight: bold;
     align-items: center;
 }
-header nav .ctabutton {
-    background: #6B8E7E; /* Color de botón */
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-}
 footer {
     background-color: white;
     color:#6B8E7E;
     font-weight: bold;
     text-align:center;
     width: 100%;
-    height: 38px;
+    height: 8%;
     border-radius: 10px;
+    border:solid black;
+    position: absolute;
+    margin-top: 10px;
 }
 .flexcontainer {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     width: 100%;
+    height: 82%;
+    border:solid black;
+    padding: 10px;
 }
 
-div.div1{
+div.divhero{
     width: 100%;
     height: 500px;
+    border:solid black;
 
 }
-div.div2{
+div.divservices{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color:white;
+    border:solid black;
+    margin-bottom: 20px;
 }
-div.div3{
+div.divhow{
     width: 100%;
     height: 300px;
     background-color:white;
+    border:solid black;
+    margin-bottom: 30px;
     }
 
-div.div4{
-    width: 100%;
-    height: 400px;
-    background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-div.div5{
+div.divcompu{
     width: 100%;
     height: 500px;
     background-color: white;
@@ -100,15 +102,32 @@ div.div5{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border:solid black;
+}
+div.divpreven{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border:solid black;
 }
 .imagen1{
-    height: 300px;
-    width: 600px;
-margin-top: 30px;
+    height: 360px;
+    width: 660px;
+    margin-top: 40px;
+
+}
+.imagen3{
+    height: 360px;
+    width: 660px;
+    margin-top: 40px;
+
 }
 .imagen2{
-    height: 300px;
-    width: 1100px;
     margin-top: 30px;
 }
 /* Hero Section */
@@ -117,6 +136,7 @@ margin-top: 30px;
     width: 100%; /* Altura completa del viewport */
     overflow: hidden;
     height: 100%;
+    border:solid black;
   
 }
 .hero-video {
@@ -127,11 +147,13 @@ margin-top: 30px;
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Asegura que el video quede en el fondo */
+    border:solid black;
 }
 .hero-video video {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+    border:solid black;
 }
 .hero-content {
     position: relative;
@@ -139,6 +161,7 @@ margin-top: 30px;
     padding: 20px;
     top: 50%;
     transform: translateY(-50%);
+    border:solid black;
 }
 .hero-content h1 {
     font-size: 2.5em;
@@ -189,6 +212,8 @@ margin-top: 30px;
 .services-container {
     padding: 20px; /* Espacio interior del contenedor */
     background-color:white;
+    border:solid black;
+    margin-bottom: 30px;
 }
 
 .services {
@@ -246,6 +271,7 @@ margin-top: 30px;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     overflow-x: auto; /* Permite el desplazamiento horizontal si el contenido es demasiado ancho */
+    margin-bottom: 20px;
 }
 
 .how-it-works h2 {
@@ -260,6 +286,7 @@ margin-top: 30px;
     overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
     gap: 10px; /* Espacio entre los pasos */
     padding: 10px 0; /* Espaciado superior e inferior */
+    border:solid black;
 }
 
 .step {
@@ -295,13 +322,17 @@ margin-top: 30px;
 }
 
 @media screen and (max-width:600px){
-    .flexcontainer {
-        flex-direction: column; /* Cambia la dirección del contenedor flex a columna para apilar elementos verticalmente */
-    }
+   .flexcontainer{
+     display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    height: 82%;
+    border:solid black;
+    padding: 10px;}
    
     #bar{
         width: 100%;
-        height: 50px;
+        height: 40px;
         position:fixed;
         top:0;
         z-index: 10000;
@@ -323,10 +354,11 @@ header{
     top:0;
     z-index: 10;
     position: relative;
-    margin-bottom: 10px;
+    background-color: green;
 }
+
 .container{
-    height:100%;
+    height:50%;
     width:49%;
     position: fixed;
     margin-top: 20px;
@@ -346,7 +378,6 @@ header .container ul {
     align-items: center; /* Centra los elementos horizontalmente */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
     color: black;
-    background-color: white;
     
 }
 
@@ -394,18 +425,105 @@ header .container ul li {
 .cta-button {
     display: none;
 }
-.hero{
-    margin-top: 20px;
-    height: 300px;
-    margin-bottom: 1px;
-    border: solid black;
+div.divhero{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
 }
-.div1{
-    height: 10px;
-    margin-bottom: 1px;
-    border: solid black;
+div.divservices{
+    width: 100%;
+    height: 950px;
+    background-color:white;
+    border:solid black;
 }
-.div2{
-    height: 500px;
+div.divhow{
+    width: 100%;
+    height: 800px;
+    background-color:white;
+    border:solid black;
+    margin-bottom: 30px;
+    }
+.how-it-works {
+        background: white; /* Fondo blanco */
+        padding: 10px; /* Reducción del relleno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        overflow: hidden; /* Oculta el desbordamiento */
+        margin-bottom: 20px;
+        width: 90%; /* Reducir el tamaño total en un 80% */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    
+.how-it-works h2 {
+        text-align: center;
+        font-size: 1.5em; /* Tamaño de fuente reducido */
+        color: #333; /* Color oscuro */
+        margin-bottom: 20px; /* Espacio debajo del título */
+    }
+    
+.steps {
+        display: flex;
+        flex-wrap: wrap; /* Permite el ajuste en múltiples filas */
+        gap: 10px; /* Espacio entre los pasos */
+        padding: 10px 0; /* Espaciado superior e inferior */
+        justify-content: center; /* Centra los pasos en la fila */
+    }
+    
+.step {
+        background: #ffffff; /* Fondo blanco */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 10px 15px; /* Relleno reducido */
+        width: calc(33.33% - 20px); /* Ancho del 33.33% menos el espacio entre los elementos */
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+        text-align: center; /* Centra el texto */
+        box-sizing: border-box; /* Incluye relleno y borde en el ancho total */
+    }
+    
+.step:hover {
+        transform: translateY(-5px); /* Elevación al pasar el mouse */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+    }
+    
+ .step h3 {
+        font-size: 1.2em; /* Tamaño de fuente del subtítulo */
+        color: #6B8E7E; /* Color azul para el subtítulo */
+        margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    }
+    
+.step p {
+        font-size: 0.9em; /* Tamaño de fuente del texto */
+        color: #555; /* Color gris oscuro */
+        line-height: 1.4; /* Espaciado entre líneas */
+    }
+    
+div.divcompu{
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border:solid black;
+}
+.imagen1{
+        height: 200px;
+        width: 500px;
+    }
+.imagen3{
+        height: 250px;
+        width: 400px;
+    }
+div.divpreven{
+    width: 0px;
+    height: 0px;
+    border: white;
+}   
+.imagen2{
+    visibility: hidden;
+}
+.tit{
+    height: 15px;
 }
 }
