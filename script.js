@@ -1,7 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+ddocument.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("consultaForm");
 
     form.addEventListener("submit", function(event) {
+        // Obtener todos los elementos que son requeridos
         const requiredFields = [
             form.correo,
             form.nombre,
@@ -12,12 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
             form.direccion,
             form.fecha_nacimiento,
             form.motivo,
-            ...document.querySelectorAll('input[name="cardiovasculares"], input[name="renales"], input[name="neurologicas"], input[name="hematologicas"], input[name="autoinmunes"], input[name="respiratorias"], input[name="musculoesqueleticas"], input[name="vista"], input[name="digestivas"], input[name="endocrinas"]'),
+            form.cardiovasculares,
+            form.renales,
+            form.neurologicas,
+            form.hematologicas,
+            form.autoinmunes,
+            form.respiratorias,
+            form.musculoesqueleticas,
+            form.vista,
+            form.digestivas,
+            form.endocrinas,
             form.alergia,
             form.veracidad,
             form.terminos
         ];
 
+        // Verificar si se llenaron todos los campos requeridos
         const isValid = requiredFields.every(field => {
             if (field.type === 'radio') {
                 return Array.from(document.getElementsByName(field.name)).some(radio => radio.checked);
@@ -26,9 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (!isValid) {
-            event.preventDefault();
+            event.preventDefault(); // Detener el envío del formulario
             alert("Por favor, complete todos los campos obligatorios antes de enviar el formulario.");
         }
     });
 });
-
