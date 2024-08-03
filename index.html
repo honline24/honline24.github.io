@@ -2,122 +2,115 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta Médica</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
+    <title>Honline - Telemedicina</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+<div class="contenedorglobal">
 <body>
-    <div class="container">
-        <h1>Formulario de Consulta Médica</h1>
-        <form id="consultaForm" action="#" method="POST">
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-
-            <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni" required>
-
-            <label for="telefono">Número de Teléfono Celular:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <label for="provincia">Provincia y Ciudad:</label>
-            <input type="text" id="provincia" name="provincia" required>
-
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
-
-            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-
-            <label for="motivo">Motivo de Consulta:</label>
-            <textarea id="motivo" name="motivo" required></textarea>
-
-            <label for="medicaciones">Medicaciones Habituales:</label>
-            <textarea id="medicaciones" name="medicaciones"></textarea>
-
-            <fieldset>
-                <legend>Seleccione si padece las siguientes enfermedades:</legend>
-                <div>
-                    <label>Enfermedades Cardiovasculares:</label>
-                    <input type="radio" name="cardiovasculares" value="si" required> Sí
-                    <input type="radio" name="cardiovasculares" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Renales:</label>
-                    <input type="radio" name="renales" value="si" required> Sí
-                    <input type="radio" name="renales" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Neurológicas:</label>
-                    <input type="radio" name="neurologicas" value="si" required> Sí
-                    <input type="radio" name="neurologicas" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Hematológicas:</label>
-                    <input type="radio" name="hematologicas" value="si" required> Sí
-                    <input type="radio" name="hematologicas" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Autoinmunes:</label>
-                    <input type="radio" name="autoinmunes" value="si" required> Sí
-                    <input type="radio" name="autoinmunes" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Respiratorias:</label>
-                    <input type="radio" name="respiratorias" value="si" required> Sí
-                    <input type="radio" name="respiratorias" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Musculoesqueléticas:</label>
-                    <input type="radio" name="musculoesqueleticas" value="si" required> Sí
-                    <input type="radio" name="musculoesqueleticas" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades de la Vista:</label>
-                    <input type="radio" name="vista" value="si" required> Sí
-                    <input type="radio" name="vista" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Digestivas:</label>
-                    <input type="radio" name="digestivas" value="si" required> Sí
-                    <input type="radio" name="digestivas" value="no"> No
-                </div>
-                <div>
-                    <label>Enfermedades Endócrinas:</label>
-                    <input type="radio" name="endocrinas" value="si" required> Sí
-                    <input type="radio" name="endocrinas" value="no"> No
-                </div>
-            </fieldset>
-
-            <label for="detalles_enfermedades">Si contestó que sí en alguno de los ítems anteriores, detalle:</label>
-            <textarea id="detalles_enfermedades" name="detalles_enfermedades"></textarea>
-
-            <label>¿Posee alergia a algún fármaco?</label>
-            <input type="radio" name="alergia" value="si" required> Sí
-            <input type="radio" name="alergia" value="no"> No
-            
-            <label for="detalles_alergia">Si contestó que sí, detalle a cuál o cuáles fármacos:</label>
-            <textarea id="detalles_alergia" name="detalles_alergia"></textarea>
-
-            <label>Declaro la veracidad de los datos ingresados y no haber omitido información:</label>
-            <input type="radio" name="veracidad" value="si" required> Sí
-            <input type="radio" name="veracidad" value="no"> No
-
-            <label>Declaro haber leído y acepto los términos y condiciones:</label>
-            <input type="radio" name="terminos" value="si" required> Sí
-            <input type="radio" name="terminos" value="no"> No
-
-            <p>
-                Para más información, por favor lea nuestros <a href="link-a-terminos.html" target="_blank">términos y condiciones</a>.
-            </p>
-            <button type="submit">Enviar</button>
-        </form>
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Artículos</a></li>
+                    <li><a href="#">Más información</a></li>
+                    <li><a href="formulario.html">Consulta online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="flexcotainer">
+  <div class="divhero">
+     <div class="hero">
+          <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="imagenes/Video.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="hero-content">
+            <h1>Bienvenidos a Honline</h1>
+            <h2>Helth Online</h2>
+                    <p>Accede a información de salud y servicios médicos desde la comodidad de tu hogar.</p>
+                    <a href="#" class="cta-button">Ver artículos de interés</a>
+                    <a href="https://www.instagram.com/tu_perfil" class="cta-button"> Seguinos en Instagram </a>
+                    <a href="#" class="cta-button">Consulta online</a>
+          </div> 
+     </div>
+  </div>
+  <div class="divservices">
+     <div class="services-container">
+        <!-- Servicios Destacados -->
+         <div class="services">
+             <h2 class="services-heading">Nuestros Servicios</h2>
+             <div class="service-item">
+                <h3 class="service-title">Diagnóstico y Tratamiento Especializado</h3>
+                <p class="service-description">Nuestros profesionales altamente capacitados proporcionan diagnósticos precisos y planes de tratamiento personalizados.</p>
+             </div>
+             <div class="service-item">
+                <h3 class="service-title">Monitoreo Integral de la Salud</h3>
+                <p class="service-description">Explora nuestros artículos especializados en la página web para mejorar tu bienestar y recibe el seguimiento experto de nuestros profesionales de salud en el manejo de enfermedades y cuidados.</p>
+             </div>
+             <div class="service-item">
+                <h3 class="service-title">Emisión de Certificados Médicos</h3>
+                <p class="service-description">Obtén certificados médicos oficiales para tus necesidades profesionales o personales.</p>
+             </div>
+             <div class="service-item">
+                <h3 class="service-title">Transcripción de Recetas Médicas</h3>
+                <p class="service-description">Facilitamos la transcripción de recetas médicas que han tenido errores en su elaboración o que han vencido recientemente. Esto garantiza un acceso rápido y eficiente a tus recetas, permitiéndote gestionarlas sin complicaciones.</p>
+             </div>
+         </div>
+     </div>
+  </div>
+    <div class="divcompu">
+      <img class="imagen1"  src="imagenes/compu 5.png" alt="">
+      <img class="imagen3" src="imagenes/imagen6.png" alt="">
     </div>
+
+ <div class="divhow">
+    <div class="how-it-works">
+            <h2>¿Cómo Funciona?</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Solicita atención online si la necesitas en el momento</h3>
+                    <p>Dirígete a la sección correspondiente para comenzar.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Completa tus datos</h3>
+                    <p>Proporciona la información necesaria para que podamos contactarte por videollamada.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Detalla el motivo de la consulta y tu estado de salud</h3>
+                    <p>Incluye toda la información relevante para armar tu historia clínica. Asegúrate de que los datos sean precisos y verídicos.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Abona el arancel correspondiente a la consulta</h3>
+                    <p>Nos pondremos en contacto contigo para que envíes el comprobante de pago.</p>
+                </div>
+                <div class="step">
+                    <h3>5. Recibe la factura por la consulta</h3>
+                    <p>Podrás presentarla a la entidad correspondiente si necesitas un reintegro.</p>
+                </div>
+                <div class="step">
+                    <h3>6. Recibe la documentación por email</h3>
+                    <p>Descripción de la consulta, detalle del diagnóstico, certificado, recetas, indicaciones y solicitud de estudios médicos</p>
+                </div>
+        </div>
+    </div>
+ </div>
+    <div class="divpreven">
+       <div class="imagen2"> <img src="imagenes/Prevención1.png" alt="" width="1100px" height="450px"></div>
+    </div>
+</div>
+<footer> 
+<p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+</footer>
 </body>
+</div>  <!-- contenedor global--> 
 </html>

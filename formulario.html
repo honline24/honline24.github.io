@@ -10,10 +10,7 @@
 <body>
     <div class="container">
         <h1>Formulario de Consulta Médica</h1>
-        <form id="consultaForm" action="enviar_formulario.php" method="POST">
-            <input type="hidden" name="_next" value="https://YOUR_WEBSITE/thank-you.html">
-            <input type="hidden" name="_captcha" value="false">
-            
+        <form id="consultaForm" action="#" method="POST">
             <label for="correo">Correo Electrónico:</label>
             <input type="email" id="correo" name="correo" required>
 
@@ -51,7 +48,51 @@
                     <input type="radio" name="cardiovasculares" value="si" required> Sí
                     <input type="radio" name="cardiovasculares" value="no"> No
                 </div>
-                <!-- Agregar campos similares para otras enfermedades -->
+                <div>
+                    <label>Enfermedades Renales:</label>
+                    <input type="radio" name="renales" value="si" required> Sí
+                    <input type="radio" name="renales" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Neurológicas:</label>
+                    <input type="radio" name="neurologicas" value="si" required> Sí
+                    <input type="radio" name="neurologicas" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Hematológicas:</label>
+                    <input type="radio" name="hematologicas" value="si" required> Sí
+                    <input type="radio" name="hematologicas" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Autoinmunes:</label>
+                    <input type="radio" name="autoinmunes" value="si" required> Sí
+                    <input type="radio" name="autoinmunes" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Respiratorias:</label>
+                    <input type="radio" name="respiratorias" value="si" required> Sí
+                    <input type="radio" name="respiratorias" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Musculoesqueléticas:</label>
+                    <input type="radio" name="musculoesqueleticas" value="si" required> Sí
+                    <input type="radio" name="musculoesqueleticas" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades de la Vista:</label>
+                    <input type="radio" name="vista" value="si" required> Sí
+                    <input type="radio" name="vista" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Digestivas:</label>
+                    <input type="radio" name="digestivas" value="si" required> Sí
+                    <input type="radio" name="digestivas" value="no"> No
+                </div>
+                <div>
+                    <label>Enfermedades Endócrinas:</label>
+                    <input type="radio" name="endocrinas" value="si" required> Sí
+                    <input type="radio" name="endocrinas" value="no"> No
+                </div>
             </fieldset>
 
             <label for="detalles_enfermedades">Si contestó que sí en alguno de los ítems anteriores, detalle:</label>
@@ -60,7 +101,7 @@
             <label>¿Posee alergia a algún fármaco?</label>
             <input type="radio" name="alergia" value="si" required> Sí
             <input type="radio" name="alergia" value="no"> No
-
+            
             <label for="detalles_alergia">Si contestó que sí, detalle a cuál o cuáles fármacos:</label>
             <textarea id="detalles_alergia" name="detalles_alergia"></textarea>
 
@@ -80,3 +121,4 @@
     </div>
 </body>
 </html>
+
