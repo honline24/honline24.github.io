@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta Médica</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Consulta Médica</h1>
+        <form id="consultaForm" action="https://formsubmit.co/sofiatripichiofs@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://YOUR_WEBSITE/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="telefono">Número de Teléfono Celular:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="provincia">Provincia y Ciudad:</label>
+            <input type="text" id="provincia" name="provincia" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="motivo">Motivo de Consulta:</label>
+            <textarea id="motivo" name="motivo" required></textarea>
+
+            <label for="medicaciones">Medicaciones Habituales:</label>
+            <textarea id="medicaciones" name="medicaciones"></textarea>
+
+            <fieldset>
+                <legend>Seleccione si padece las siguientes enfermedades:</legend>
+                <div>
+                    <label>Enfermedades Cardiovasculares:</label>
+                    <input type="radio" name="cardiovasculares" value="si" required> Sí
+                    <input type="radio" name="cardiovasculares" value="no"> No
+                </div>
+                <!-- Agregar campos similares para otras enfermedades -->
+            </fieldset>
+
+            <label for="detalles_enfermedades">Si contestó que sí en alguno de los ítems anteriores, detalle:</label>
+            <textarea id="detalles_enfermedades" name="detalles_enfermedades"></textarea>
+
+            <label>¿Posee alergia a algún fármaco?</label>
+            <input type="radio" name="alergia" value="si" required> Sí
+            <input type="radio" name="alergia" value="no"> No
+
+            <label for="detalles_alergia">Si contestó que sí, detalle a cuál o cuáles fármacos:</label>
+            <textarea id="detalles_alergia" name="detalles_alergia"></textarea>
+
+            <label>Declaro la veracidad de los datos ingresados y no haber omitido información:</label>
+            <input type="radio" name="veracidad" value="si" required> Sí
+            <input type="radio" name="veracidad" value="no"> No
+
+            <label>Declaro haber leído y acepto los términos y condiciones:</label>
+            <input type="radio" name="terminos" value="si" required> Sí
+            <input type="radio" name="terminos" value="no"> No
+
+            <p>
+                Para más información, por favor lea nuestros <a href="link-a-terminos.html" target="_blank">términos y condiciones</a>.
+            </p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
