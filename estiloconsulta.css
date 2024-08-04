@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedorglobal{
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#bar, .icon-menu3 {
+    display: none;
+}
+
+/* Estilo Container 1*/
+.container1 body, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Contenedor general */
+.container1 {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Espacio interno del contenedor */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Configuración general de secciones */
+.consultas, .guardias {
+    margin-bottom: 20px;
+}
+
+.container1 h2 {
+    margin-bottom: 30px;
+    color: #6b8e7e; /* Color del texto */
+    font-size: 1.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+/* Contenedor para las listas y las imágenes */
+.content1 {
+    display: flex;
+    align-items: flex-start; /* Alinea los items al principio */
+    gap: 20px; /* Espacio entre la lista y la imagen */
+    border: solid #6b8e7e;;
+    padding: 20px;
+}
+.content2 {
+    display: flex;
+    align-items: flex-start; /* Alinea los items al principio */
+    gap: 20px; /* Espacio entre la lista y la imagen */
+    border: solid #6b8e7e;
+    padding: 20px;
+}
+/* Estilo para las listas */
+.consultas-list, .guardias-list {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+/* Estilo para los elementos de la lista */
+.consultas-list li, .guardias-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px; /* Bordes redondeados para los elementos de la lista */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para interactividad */
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.consultas-list li:hover, .guardias-list li:hover {
+    background-color: #e0e0e0; /* Fondo más oscuro al pasar el ratón */
+    transform: translateX(5px); /* Desplazamiento sutil al pasar el ratón */
+}
+
+/* Estilo para las imágenes */
+.consultas-image-container {
+    flex-shrink: 0; /* Impide que la imagen se reduzca */
+    margin-left: 100px;
+}
+.guardias-image-container{
+    flex-shrink: 0; /* Impide que la imagen se reduzca */
+    margin-right: 40px;
+    margin-top: 10px;
+    
+}
+.consultas-image, .guardias-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo adicional para el texto de información adicional */
+.info-adicional {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #6b8e7e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Estilo Container 2*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white
+}
+
+.container2 {
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto; 
+    margin-bottom: 40px;
+}
+
+.container2 h1 {
+    text-align: center;
+    color:#6b8e7e ;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+}
+
+
+.container2 ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+.container2 li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container2 li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container2 li div {
+    flex: 1;
+}
+
+.container2 a {
+    color: #6b8e7e;
+    text-decoration: none;
+}
+
+.container2 a:hover {
+    text-decoration: underline;
+}
+
+.container2 button {
+    background-color: #6b8e7e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+.container2 button:hover {
+    background-color: #8fbba7;
+}
+
+.container2 .extra-photos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container2 .extra-photos img {
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border: solid  #6b8e7e;
+    border-radius: 10px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+header .logo img {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+header nav ul li {
+    margin: 0 10px;
+    align-items: center;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+}
+footer {
+    background-color: white;
+    color:#6B8E7E;
+    font-weight: bold;
+    text-align:center;
+    width: 100%;
+    height: 8%;
+    border: #6B8E7E solid;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 10px;
+}
+.botonesformularios{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 600px) {
+    .container2 {
+        margin: 10px;
+        padding: 15px;
+    }
+    .container2 extra-photos {
+        flex-direction: column;
+    }
+
+    .container2 extra-photos img {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .container1 content {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        gap: 10px; /* Reduce el espacio entre la lista y la imagen */
+    }
+    
+    .consultas-image-container, .guardias-image-container {
+        display: none; /* Oculta las imágenes en pantallas pequeñas */
+    }
+    .info-adicional {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #6b8e7e;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .container1 h2 {
+        margin-bottom: 30px;
+        color: #6b8e7e; /* Color del texto */
+        font-size: 1.2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    
+    }
+    .container2 h1 {
+        text-align: center;
+        color:#6b8e7e ;
+        margin-bottom: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.2em;
+    }
+    
+      
+    #bar{
+        width: 100%;
+        height: 40px;
+        position:fixed;
+        top:0;
+        z-index: 10000;
+        display: none;
+        
+    }
+.icon-menu3{
+    display: block;
+    color: black;
+    height: 200px;
+    font-size: 30px;
+    left: 20px;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 100000;
+}
+header{
+    height: 20px;
+    top:0;
+    z-index: 10;
+    position: relative;
+    border:hidden;
+}
+
+.container{
+    height:50%;
+    width:49%;
+    position: fixed;
+    margin-top: 20px;
+    transform: translateX(-100%);
+}
+.logo{
+display: none;
+}
+
+header .container ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding del contenedor de la lista */
+    margin: 0; /* Elimina el margin del contenedor de la lista */
+    display: flex; /* Usa flexbox para el contenedor de la lista */
+    flex-direction: column; /* Alinea los elementos de la lista en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    color: black;
+    
+}
+
+header .container ul li {
+    display: block; /* Asegura que los elementos de la lista se comporten como bloques */
+    border-bottom:black solid 1px; /* Línea debajo de cada ítem */
+    padding: 10px 0; /* Padding arriba y abajo de los ítems */
+    width: 80%; /* Ancho del 80% para los elementos de la lista */
+    text-align: center; /* Centra el texto dentro de cada ítem */
+    background-color: white;
+    margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
+}
+#bar:checked ~ .container{
+    transform: translateX(0%);
+    transition: all 0.8s ease-out;
+    transition: all 0.8s ease-in;
+    background-color: white;
+    height: 500px;
+    width: 150px;
+    position: fixed;
+}
+}
+

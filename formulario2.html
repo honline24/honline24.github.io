@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
+    <title>Honline - Telemedicina</title>
+    <link rel="stylesheet" href="estiloformulario.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<div class="contenedorglobal">
+<body>
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Artículos</a></li>
+                    <li><a href="#">Más información</a></li>
+                    <li><a href="consulta.html">Consulta online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container1">
+        <h1>Formulario de Consulta Médica</h1>
+        <form  action=https://formspree.io/f/xovadpyn method="POST">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="telefono">Número de Teléfono Celular:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="motivo">Motivo de Consulta:</label>
+            <textarea id="motivo" name="motivo" required></textarea>
+
+            <label for="detalles_enfermedades">¿Hay información médica nueva o relevante que deba actualizar desde su última consulta?</label>
+        
+             <p class="description">
+                Por favor, indique si ha experimentado cambios significativos en su salud, ha recibido nuevos diagnósticos, ha comenzado algún nuevo tratamiento o ha tenido algún otro evento médico importante desde su última consulta. Esto puede incluir:
+            </p>
+            <ul class="details-list">
+                <li>Nuevas enfermedades o afecciones diagnosticadas.</li>
+                <li>Cambios en la medicación o tratamientos.</li>
+                <li>Resultados de pruebas o exámenes médicos recientes.</li>
+                <li>Intervenciones quirúrgicas o procedimientos.</li>
+                <li>Cambios en su historial de salud relevante, como alergias o antecedentes familiares.</li>
+            </ul>
+            <p class="description">
+                Proporcione detalles específicos y fechas si es posible, para que podamos actualizar su expediente y asegurar que reciba la mejor atención posible.
+            </p>
+            <textarea id="detalles_enfermedades" name="detalles_enfermedades" rows="6" placeholder="Proporcione los detalles aquí..."></textarea>
+
+            <label>Declaro la veracidad de los datos ingresados y no haber omitido información:</label>
+            <input type="radio" name="veracidad" value="si" required> Sí
+            <input type="radio" name="veracidad" value="no"> No
+
+            <label>Declaro haber leído y acepto los términos y condiciones:</label>
+            <input type="radio" name="terminos" value="si" required> Sí
+            <input type="radio" name="terminos" value="no"> No
+
+            <p>
+                Para más información, por favor lea nuestros <a href="link-a-terminos.html" target="_blank">términos y condiciones</a>.
+            </p>
+            <div class="botonenviar"><button type="submit">Enviar</button></div>
+        </form>
+    </div>
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</div>
+</html>

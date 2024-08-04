@@ -2,13 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta Médica</title>
-    <link rel="stylesheet" href="styless.css">
-    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
+    <title>Honline - Telemedicina</title>
+    <link rel="stylesheet" href="estiloformulario.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
+<div class="contenedorglobal">
 <body>
-    <div class="container">
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Artículos</a></li>
+                    <li><a href="#">Más información</a></li>
+                    <li><a href="consulta.html">Consulta online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container1">
         <h1>Formulario de Consulta Médica</h1>
         <form  action=https://formspree.io/f/xovadpyn method="POST">
             <label for="correo">Correo Electrónico:</label>
@@ -116,9 +134,13 @@
             <p>
                 Para más información, por favor lea nuestros <a href="link-a-terminos.html" target="_blank">términos y condiciones</a>.
             </p>
-            <button type="submit">Enviar</button>
+           <div class="botonenviar"><button type="submit">Enviar</button></div>
         </form>
     </div>
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
 </body>
+</div>
 </html>
 
