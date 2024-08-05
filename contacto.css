@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-.contenedorglobal{
+
+.contenedorglobal {
     width: 100%;
     height: 100%;
     max-width: 2000px;
@@ -18,7 +19,10 @@
     width: 100%;
     height: 10%;
     align-items: center;
+    border: #6B8E7E solid;
+    border-radius: 10px;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -26,25 +30,25 @@ header .container {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    
 }
+
 header .logo img {
     width: 100%;
     margin-top: 10px;
-    
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-   
 }
+
 header nav ul li {
     align-items: center;
     padding: 10px;
     margin-right: 20px;
     border-radius: 5px;
-    border-style:hidden;
+    border-style: hidden;
     background-color: rgb(239, 253, 248);
 }
 
@@ -55,11 +59,12 @@ header nav ul li a {
     align-items: center;
     font-size: 1em;
 }
+
 footer {
     background-color: white;
-    color:#6B8E7E;
+    color: #6B8E7E;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     width: 100%;
     height: 8%;
     border: #6B8E7E solid;
@@ -67,6 +72,154 @@ footer {
     position: absolute;
     margin-top: 10px;
 }
-footer p{
+
+footer p {
     margin-top: 15px;
 }
+
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 82%;
+    padding: 10px;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color:#6B8E7E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:#6B8E7E;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:disabled {
+    background-color: #cccccc;
+}
+
+#bar, .icon-menu3 {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        display: none;
+        }
+        #bar{
+            width: 100%;
+            height: 40px;
+            position:fixed;
+            top:0;
+            z-index: 10000;
+            display: none;
+            
+        }
+    .icon-menu3{
+        display: block;
+        color: black;
+        height: 200px;
+        font-size: 30px;
+        left: 20px;
+        margin-top: 18px;
+        position: absolute;
+        z-index: 100000;
+    }
+    header{
+        height: 20px;
+        top:0;
+        z-index: 10;
+        position: relative;
+    }
+    
+    .container{
+        height:50%;
+        width:49%;
+        position: fixed;
+        margin-top: 20px;
+        transform: translateX(-100%);
+    }
+        
+        header .container ul {
+            list-style: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el padding del contenedor de la lista */
+            margin: 0; /* Elimina el margin del contenedor de la lista */
+            display: flex; /* Usa flexbox para el contenedor de la lista */
+            flex-direction: column; /* Alinea los elementos de la lista en una columna */
+            align-items: center; /* Centra los elementos horizontalmente */
+            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+            color: black;
+            
+        }
+        
+        header .container ul li {
+            display: block; /* Asegura que los elementos de la lista se comporten como bloques */
+            border: 1px solid #6B8E7E;
+            border-radius: 10px;
+            padding: 10px;
+            width: 80%; /* Ancho del 80% para los elementos de la lista */
+            text-align: center; /* Centra el texto dentro de cada ítem */
+            background-color: white;
+            margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
+            
+        }
+        
+        #bar:checked ~ .container{
+            transform: translateX(0%);
+            transition: all 0.8s ease-out;
+            transition: all 0.8s ease-in;
+            background-color: white;
+            height: 500px;
+            width: 150px;
+            position: fixed;
+        }
+    .contact-form {
+        padding: 15px;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px;
+    }
+}
+
