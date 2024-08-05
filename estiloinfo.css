@@ -11,13 +11,14 @@
     margin: 0 auto;
     overflow: hidden;
 }
-
 /* Header */
 .header {
     background: white; /* Cambia al color primario que quieras usar */
     width: 100%;
     height: 10%;
     align-items: center;
+    border: #6B8E7E solid;
+    border-radius: 10px;
 }
 header .container {
     display: flex;
@@ -66,123 +67,107 @@ footer {
     border-radius: 10px;
     position: absolute;
     margin-top: 10px;
-    text-align: center;
-    justify-content: center;
 }
 footer p{
     margin-top: 15px;
 }
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 82%;
+    padding: 10px;
+    align-items: center;
+}
+
 #bar, .icon-menu3 {
     display: none;
 }
+/* Estilos de la sección de información general */
 
-.container1 {
-    width: 70%;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    justify-content: center;
-    
-}
-
-h1 {
-    text-align: center;
-    color: #6b8e7e;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.4em;
-}
-
-label {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-    display: block;
-    color: #555;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #555;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-fieldset {
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 4px;
-}
-.botonenviar{
-    width: 100%;
+.info-general {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-
-}
-button {
-    background-color: #6b8e7e;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 20px;
-    width: 100px;
-    height: 50px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #647a68;
+.info-general:hover {
+    transform: scale(1.01);
 }
-.description {
+.info-texto{
+    width: 56%;
+    height: auto;
+    padding: 15px;
+
+}
+.info-texto h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6B8E7E;
+margin-bottom: 15px;
+text-align: center;
+}
+.info-texto p{
     font-size: 1em;
-    color: #666;
-    margin-bottom: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-.detalles_enfermedades{
-    font-size: 1.2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #666;
-
+    color: black;
+    line-height: 1.2em;
 }
 
-.details-list {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style-type: none;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    color: #666;
+.imagen{
+    width: 40%;
+    height: 70%;
+    margin: 20px;
+    margin-top: 50px;
 }
-label {
-    margin: 10px 0 5px;
-    display: block;
-    color: #555;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.imagencompu {
+   width: 100%;
+   height: 100%;
 }
-.details-list li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #555;
-font-size: 0.9em;}
+
+/* Estilos de la sección de preguntas frecuentes */
+.faq {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6B8E7E;
+}
+
+.pregunta {
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.pregunta:hover {
+    background-color: #f1f1f1;
+}
+
+.pregunta h3 {
+    margin-bottom: 5px;
+}
+
+.respuesta {
+    display: none;
+    margin-top: 5px;
+}
 
 
 @media (max-width: 600px) {
@@ -256,5 +241,16 @@ background-color: white;
 height: 500px;
 width: 150px;
 position: fixed;
+}
+.imagen{
+    display: none;
+}
+.info-texto{
+width: 100%;
+padding: 10px;
+}
+.info-general{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 }

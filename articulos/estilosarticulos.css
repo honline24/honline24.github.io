@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.contenedorglobal{
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: white; /* Cambia al color primario que quieras usar */
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    border: #6B8E7E solid;
+    border-radius: 10px;
+    justify-content: center;
+}
+header .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+header .logo img {
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+footer {
+    background-color: white;
+    color:#6B8E7E;
+    font-weight: bold;
+    text-align:center;
+    width: 100%;
+    height: 8%;
+    border: #6B8E7E solid;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 10px;
+}
+footer p{
+    margin-top: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articulo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.articulo h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.articulo p {
+    margin-bottom: 1rem;
+}
+
+.articulo .autor {
+    font-style: italic;
+    color: #777;
+}
+ul li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.relacionados {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.relacionados h3 {
+    margin-top: 0;
+}
+
+.relacionados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.relacionados ul li {
+    margin-bottom: 0.5rem;
+}
+
+.relacionados ul li a {
+    text-decoration: none;
+    color: #50b3a2;
+}
+
+.relacionados ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+   
+.logo{
+display: none;
+}
+body {
+    padding: 0;
+}
+main {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+}

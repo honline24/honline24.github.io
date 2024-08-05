@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honline - Telemedicina</title>
+    <link rel="stylesheet" href="estiloarticulos.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<div class="contenedorglobal">
+<body>
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consulta.html">Consulta online</a></li>
+                    <li><a href="articulos.html">Artículos</a></li>
+                    <li><a href="infomacion.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="filter-buttons">
+        <button onclick="filterArticles('all')" class="active">Todos</button>
+        <button onclick="filterArticles('Motivos de consulta frecuente')">Motivos de consulta frecuente</button>
+        <button onclick="filterArticles('Gastroeneterologia')">Gastroenterología</button>
+        <button onclick="filterArticles('Infectologia')">Infectología</button>
+        <button onclick="filterArticles('Neumologia')">Neumología</button>
+        <button onclick="filterArticles('Ginecologia')">Ginecología</button>
+        <button onclick="filterArticles('Cardiologia')">Cardiología</button>
+        <button onclick="filterArticles('Medicina del estilo de vida')">Medicina del estilo de vida</button>
+        <button onclick="filterArticles('Psiquiatria')">Psiquiatría</button>
+        <button onclick="filterArticles('Prevencion')">Prevención</button>
+        <button onclick="filterArticles('Endocrionologia')">Endocrinología</button>
+        <button onclick="filterArticles('Dermatologia')">Dermatología</button>
+        <button onclick="filterArticles('Medicina Estetica')">Medicina Estética</button>
+        <button onclick="filterArticles('Oftalmologia')">Oftalmología</button>
+        <button onclick="filterArticles('otros')">Otros</button>
+    </div>
+    
+    <div class="container1" id="articles-container">
+        <!-- Bloques de artículos de ejemplo -->
+        <div class="article" data-category= "Infectologia">
+            <img src="articulos/imagenes articulos/Faringitis.jpg" alt="Dolor de garganta">
+            <div class="description">Faringitis.</div>
+            <div class="author">Autor: Dra. Sofía Tripichio</div>
+            <a href="articulos/Faringitis.html" target="_blank">Leer</a>
+        </div>
+        <!-- Repite este bloque para 40 artículos, cambiando el data-category, la imagen, descripción y autor -->
+        <!-- Ejemplo adicional -->
+        <div class="article" data-category="Infectologia">
+            <img src="articulos/imagenes articulos/resistenciabacteriana.webp" alt="Resistencia bacteriana">
+            <div class="description">Resistencia bacteriana a los antibióticos.</div>
+            <div class="author">Autor: Dra. Sofía Tripichio</div>
+            <a href="articulos/resistenciabacteriana.html" target="_blank">Leer</a>
+        </div>
+        <div class="article" data-category="Gastroeneterologia">
+            <img src="articulos/imagenes articulos/diarrea.jpg" alt="Dolor abdominal">
+            <div class="description">Diarrea Aguda.</div>
+            <div class="author">Autor: Dra. Sofía Tripichio</div>
+            <a href="articulos/diarrea.html" target="_blank">Leer</a>
+        </div> <div class="article" data-category="Gastroeneterologia">
+            <img src="articulos/imagenes articulos/dieta diarrea.jpg" alt="Imagen del artículo">
+            <div class="description">Dieta para diarrea.</div>
+            <div class="author">Autor: Dra. Sofia Tripichio</div>
+            <a href="articulos/dietadiarrea.html" target="_blank">Leer</a>
+        </div> 
+        
+    </div>
+    
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
+    <script src="articulosscript.js"></script>
+</body>
+</div>
+</html>

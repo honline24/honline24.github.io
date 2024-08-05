@@ -40,14 +40,20 @@ header nav ul {
    
 }
 header nav ul li {
-    margin: 0 10px;
     align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-style:hidden;
+    background-color: rgb(239, 253, 248);
 }
+
 header nav ul li a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     align-items: center;
+    font-size: 1em;
 }
 footer {
     background-color: white;
@@ -60,6 +66,9 @@ footer {
     border-radius: 10px;
     position: absolute;
     margin-top: 10px;
+}
+footer p{
+    margin-top: 15px;
 }
 .flexcontainer {
     display: flex;
@@ -381,13 +390,16 @@ header .container ul {
 
 header .container ul li {
     display: block; /* Asegura que los elementos de la lista se comporten como bloques */
-    border-bottom:black solid 1px; /* Línea debajo de cada ítem */
-    padding: 10px 0; /* Padding arriba y abajo de los ítems */
+    border: 1px solid #6B8E7E;
+    border-radius: 10px;
+    padding: 10px;
     width: 80%; /* Ancho del 80% para los elementos de la lista */
     text-align: center; /* Centra el texto dentro de cada ítem */
     background-color: white;
     margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
+    
 }
+
 #bar:checked ~ .container{
     transform: translateX(0%);
     transition: all 0.8s ease-out;

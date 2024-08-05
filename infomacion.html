@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
+    <title>Honline - Telemedicina</title>
+    <link rel="stylesheet" href="estiloinfo.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<div class="contenedorglobal">
+<body>
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consulta.html">Consulta online</a></li>
+                    <li><a href="articulos.html">Artículos</a></li>
+                    <li><a href="infomacion.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class=flex-container>
+        <div class="info-general">
+            <div class="info-texto">
+                <h1>Información</h1>
+              <p>Honline es una plataforma de telemedicina que ofrece atención médica en línea las 24 horas del día, los 7 días de la semana.
+                Contamos con un equipo de médicos altamente capacitados que brindan consultas online cumpliendo con las resoluciones 3316/2023 y 581/2022, así como con toda la normativa vigente de la Ley 25326 de Protección de Datos Personales y la Ley 26529 de Derechos del Paciente.<br>
+                Nuestro servicio está disponible exclusivamente para adultos mayores de 18 años.<br>
+                Además de nuestras consultas médicas, ofrecemos información valiosa sobre salud a través de artículos en nuestra página web y en Instagram.<br>
+                Para acceder a una consulta, es necesario abonar un arancel.<br>
+                Cabe destacar que la teleconsulta no reemplaza la atención médica presencial y está limitada a resolver ciertos tipos de padecimientos detallados en la sección de consulta online.<br>
+                No podemos atender emergencias ni condiciones que requieran un examen físico en persona.
+                Emitimos recetas electrónicas que se envían por correo electrónico, junto con el resumen de la consulta, las prescripciones y certificados médicos.
+                En caso de que la consulta no pueda resolverse de manera virtual, el profesional podrá derivar al paciente a otro especialista o a una guardia médica presencial. A pesar de la derivación, el costo de la consulta se mantiene debido a la inversión de tiempo del profesional.<br>
+                Es fundamental que los usuarios lean con atención los términos y condiciones antes de realizar una consulta online.</p>
+            </div>
+            <div class="imagen"><img class="imagencompu" src="imagenes/compu 1.jpg" alt="Consultas Médicas en Línea"></div>
+        </div>
+
+        <div class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Qué es Honline?</h3>
+                <p class="respuesta">Honline es una plataforma de telemedicina que ofrece atención médica en línea las 24 horas del día, los 7 días de la semana.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Quiénes pueden acceder a la Consulta Online?</h3>
+                <p class="respuesta">Adultos mayores de 18 años.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Cómo me registro para una consulta?</h3>
+                <p class="respuesta">Para registrarte, dirígete a la sección Consulta Online y selecciona el Formulario de Registro. Luego, nos pondremos en contacto por WhatsApp.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Cómo procedo para acceder a la Consulta Online si me registré previamente?</h3>
+                <p class="respuesta">Dirígete a la sección Consulta Online y selecciona el Formulario de Consulta Online. Luego, nos pondremos en contacto por WhatsApp.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Debo abonar previamente la consulta?</h3>
+                <p class="respuesta">Sí. Una vez que nos contactemos por WhatsApp, se detallará el arancel correspondiente a pagar y la modalidad de pago.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Dónde envío el comprobante de pago?</h3>
+                <p class="respuesta">Envía el comprobante en el mismo chat de WhatsApp.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Qué dispositivos permiten usar la plataforma?</h3>
+                <p class="respuesta">Puedes usar smartphones, notebooks, PC y tablets. Necesitas un número de teléfono para comunicarte por WhatsApp y tenerlo abierto en el dispositivo que elijas. El dispositivo debe contar con micrófono y cámara web.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Qué tipos de consulta puedo realizar?</h3>
+                <p class="respuesta">Puedes consultar por infecciones respiratorias altas como estados gripales, sinusitis, refrío, tos, dolor de garganta; lesiones en la piel, erupciones, urticaria; síntomas ginecológicos y urinarios; náuseas, vómitos, diarrea, constipación, dolor abdominal leves; cefalea, migraña; dolores articulares, dolores de espalda; conjuntivitis; traumatismos leves; quemaduras menores; control de patologías crónicas estables; consejería para dejar de fumar; y acompañamiento conductual para el estilo de vida.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Qué tipo de consultas no atendemos por esta modalidad?</h3>
+                <p class="respuesta">No podemos atender emergencias ni condiciones que requieran un examen físico en persona. Los detalles se encuentran en la sección Consulta Online.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Quién puede ver la información médica que registre?</h3>
+                <p class="respuesta">El profesional a cargo de tu atención online puede ver tu información médica. Tus datos están resguardados y Honline cumple con las normativas vigentes de la Ley 25326 de Protección de Datos Personales y la Ley 26529 de Derechos del Paciente.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Qué documentación se me envía luego de la consulta?</h3>
+                <p class="respuesta">Al finalizar la consulta, recibirás por email las recetas, prescripciones de estudios y certificados digitales. De acuerdo con la Ley 27553, estos documentos cuentan con un QR de validación.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Puedo pedir un certificado médico para presentar en el trabajo?</h3>
+                <p class="respuesta">Sí. Al finalizar la consulta, recibirás por email un certificado médico digital.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Puedo solicitar la transcripción de una receta?</h3>
+                <p class="respuesta">Sí. Solo si la receta contiene errores o se venció recientemente, enviándola por WhatsApp en el momento de la consulta.</p>
+            </div>
+            <div class="pregunta" onclick="toggleAnswer(this)">
+                <h3>¿Puedo solicitar una receta de mis medicaciones habituales?</h3>
+                <p class="respuesta">Sí. En el caso de pacientes con enfermedades crónicas de tratamiento prolongado, puedes presentar un certificado del médico de cabecera y nosotros realizamos tu receta, ahorrándote tiempo.</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
+    <script src="infoscript.js"></script>
+</body>
+</div>
+</html>
