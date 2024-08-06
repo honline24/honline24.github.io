@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="estilo.css">
 </head>
-<div class="contenedorglobal">
 <body>
+<div class="contenedorglobal">
     <header class="header">
         <input type="checkbox" id="bar">
-        <label for="bar"class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <label for="bar" class="icon-menu3"> <a href="#" class="tit"></a></label>
         <div class="container">
             <div class="logo">
                 <img src="imagenes/HOLINE1.png" alt="Honline Logo">
@@ -30,7 +30,7 @@
     <div class="flexcontainer">
        <div class="contact-form">
         <h2>Formulario de Contacto</h2>
-        <form id="contactForm" action="https://formspree.io/f/xovadpyn" method="POST"></form>
+        <form id="contactForm" action="https://formspree.io/f/xovadpyn" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -46,14 +46,14 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <div class="botonenviar"><button type="submit">Enviar</button></div>
+            <div class="botonenviar"><button type="submit" id="submitButton">Enviar</button></div>
         </form>
       </div>
     </div>
-<footer> 
-<p>&copy; 2024 Honline. Todos los derechos reservados.</p>
-</footer>
-<script src="contactoscript.js"></script>
-</body>
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
+    <script src="contactoscript.js"></script>
 </div>  <!-- contenedor global--> 
+</body>
 </html>
