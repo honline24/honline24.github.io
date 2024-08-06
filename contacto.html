@@ -30,7 +30,7 @@
     <div class="flexcontainer">
        <div class="contact-form">
         <h2>Formulario de Contacto</h2>
-        <form id="contactForm">
+        <form id="contactForm" action=https://formspree.io/f/xovadpyn method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -46,7 +46,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit" id="submitButton" disabled>Enviar</button>
+            <div class="botonenviar"><button type="submit">Enviar</button></div>
         </form>
       </div>
     </div>
