@@ -272,6 +272,10 @@ footer p{
     height: auto;
 
 }
+.botonesformularios button{
+    width: 100%;
+    font-size: 1.2em;
+}
 
 @media (max-width: 600px) {
     .container2 {
@@ -386,6 +390,11 @@ header .container ul li {
     height: 500px;
     width: 150px;
     position: fixed;
+}
+.botonesformularios button{
+    width: 40%;
+    font-size: 1em;
+
 }
 }
 
