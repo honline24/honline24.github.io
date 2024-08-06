@@ -85,7 +85,7 @@ footer p{
 }
 
 .container1 {
-    max-width: 1200px; /* Ancho máximo para el contenedor */
+    width: 70%;
     margin: 0 auto; /* Centra el contenedor en la página */
     padding: 20px; /* Espacio interno del contenedor */
     background-color: #fff; /* Fondo blanco para el contenedor */
@@ -93,6 +93,8 @@ footer p{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     margin-top: 50px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Configuración general de secciones */
@@ -114,14 +116,12 @@ footer p{
     display: flex;
     align-items: flex-start; /* Alinea los items al principio */
     gap: 20px; /* Espacio entre la lista y la imagen */
-    border: solid #6b8e7e;;
     padding: 20px;
 }
 .content2 {
     display: flex;
     align-items: flex-start; /* Alinea los items al principio */
     gap: 20px; /* Espacio entre la lista y la imagen */
-    border: solid #6b8e7e;
     padding: 20px;
 }
 /* Estilo para las listas */
@@ -360,7 +360,6 @@ header{
 .logo{
 display: none;
 }
-
 header .container ul {
     list-style: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el padding del contenedor de la lista */
@@ -375,12 +374,17 @@ header .container ul {
 
 header .container ul li {
     display: block; /* Asegura que los elementos de la lista se comporten como bloques */
-    border-bottom:black solid 1px; /* Línea debajo de cada ítem */
-    padding: 10px 0; /* Padding arriba y abajo de los ítems */
+    border: 1px solid #6B8E7E;
+    border-radius: 10px;
+    padding: 10px;
     width: 80%; /* Ancho del 80% para los elementos de la lista */
     text-align: center; /* Centra el texto dentro de cada ítem */
     background-color: white;
     margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
+    
+}
+header .container ul li a {
+    color: #6B8E7E
 }
 #bar:checked ~ .container{
     transform: translateX(0%);
@@ -395,6 +399,16 @@ header .container ul li {
     width: 40%;
     font-size: 1em;
 
+}
+.container1{
+    display: flex;
+    justify-content: center;
+}
+.consultas-list, .guardias-list{
+    margin-left: 0px;
+}
+footer p{
+    margin-top: 5px;
 }
 }
 
