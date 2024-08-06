@@ -213,7 +213,10 @@ position: fixed;
     margin-top: 60px;
 }
 }
-
+@media (max-width: 600px) {
+    footer p{
+        margin-top: 5px;
+    }}
 /* @media (max-width: 480px) {
     .container {
         flex-direction: column;

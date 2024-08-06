@@ -555,4 +555,7 @@ div.divpreven{
     height: auto;
     font-size: 0.8em;
 }
+footer p{
+    margin-top: 5px;
+}
 }

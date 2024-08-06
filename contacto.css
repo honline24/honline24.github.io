@@ -137,6 +137,9 @@ footer p{
 }
 
 @media (max-width: 600px) {
+    footer p{
+        margin-top: 5px;
+    }
     .logo{
         display: none;
         }
