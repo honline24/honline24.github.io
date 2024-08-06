@@ -62,9 +62,9 @@ header nav ul li a {
 
 footer {
     background-color: white;
-    color: #6B8E7E;
+    color:#6B8E7E;
     font-weight: bold;
-    text-align: center;
+    text-align:center;
     width: 100%;
     height: 8%;
     border: #6B8E7E solid;
@@ -72,8 +72,7 @@ footer {
     position: absolute;
     margin-top: 10px;
 }
-
-footer p {
+footer p{
     margin-top: 15px;
 }
 

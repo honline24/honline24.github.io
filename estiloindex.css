@@ -399,7 +399,9 @@ header .container ul li {
     margin: 10px 0; /* Márgenes arriba y abajo, el margen horizontal se elimina */
     
 }
-
+header .container ul li a {
+    color: #6B8E7E
+}
 #bar:checked ~ .container{
     transform: translateX(0%);
     transition: all 0.8s ease-out;
