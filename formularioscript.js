@@ -12,6 +12,8 @@ ddocument.addEventListener("DOMContentLoaded", function() {
             form.provincia,
             form.direccion,
             form.fecha_nacimiento,
+            form.obrasocial,
+            form.afiliado,
             form.motivo,
             form.cardiovasculares,
             form.renales,
