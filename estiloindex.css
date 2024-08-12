@@ -542,14 +542,14 @@ div.divcompu{
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     align-items: center;
 }
 .imagen1{
         height: auto;
         width: 80%;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 0px;
     }
 .imagen3{
