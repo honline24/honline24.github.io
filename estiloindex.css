@@ -467,18 +467,18 @@ header .container ul li a {
 }
 div.divhero{
     width: 100%;
-    height: 400px;
+    height: auto;
     margin-top: 100px;
 }
 div.divservices{
     width: 100%;
-    height: 950px;
+    height: auto;
     background-color:white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 div.divhow{
     width: 100%;
-    height: 800px;
+    height: auto;
     background-color:white;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -579,5 +579,9 @@ div.divpreven{
 }
 footer p{
     margin-top: 5px;
+
+}
+footer{
+    height: auto;
 }
 }
