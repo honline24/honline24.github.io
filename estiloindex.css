@@ -538,7 +538,7 @@ div.divhow{
     }
     
 div.divcompu{
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -547,14 +547,14 @@ div.divcompu{
     align-items: center;
 }
 .imagen1{
-        height: 200px;
-        width: 500px;
+        height: auto;
+        width: 80%;
         margin-top: 10px;
         margin-bottom: 0px;
     }
 .imagen3{
-        height: 250px;
-        width: 400px;
+        height: auto;
+        width: 80%;
         margin-top: 0px;
         margin-bottom: 0px;
     }
