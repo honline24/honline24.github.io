@@ -42,5 +42,13 @@ ddocument.addEventListener("DOMContentLoaded", function() {
             event.preventDefault(); // Detener el envío del formulario
             alert("Por favor, complete todos los campos obligatorios antes de enviar el formulario.");
         }
+        else {
+            // Enviar el evento de conversión a Google Analytics
+            gtag('event', 'form_submission', {
+                'event_category': 'Formulario',
+                'event_label': 'Envío del formulario',
+                'value': 1
+            });
+        }
     });
 });

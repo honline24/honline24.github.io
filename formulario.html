@@ -8,12 +8,17 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-NQ9VH7SXX4');
-  
+
     // Evento de conversión al enviar el formulario
-    document.querySelector('form').addEventListener('submit', function() {
-        gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID'});
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector('form').addEventListener('submit', function() {
+            gtag('event', 'form_submit', {
+                'event_category': 'Formulario',
+                'event_label': 'Consulta Médica'
+            });
+        });
     });
-  </script>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
     <title>Honline - Telemedicina</title>
