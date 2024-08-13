@@ -1,4 +1,4 @@
-ddocument.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("consultaForm");
 
     form.addEventListener("submit", function(event) {
@@ -41,8 +41,7 @@ ddocument.addEventListener("DOMContentLoaded", function() {
         if (!isValid) {
             event.preventDefault(); // Detener el envío del formulario
             alert("Por favor, complete todos los campos obligatorios antes de enviar el formulario.");
-        }
-        else {
+        } else {
             // Enviar el evento de conversión a Google Analytics
             gtag('event', 'form_submission', {
                 'event_category': 'Formulario',
