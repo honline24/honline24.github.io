@@ -1,11 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("consultaForm");
 
     form.addEventListener("submit", function(event) {
-        // Prevenir el envío predeterminado del formulario
-        event.preventDefault();
-
         // Obtener todos los elementos que son requeridos
         const requiredFields = [
             form.correo,
@@ -43,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         if (!isValid) {
+            event.preventDefault(); // Detener el envío del formulario
             alert("Por favor, complete todos los campos obligatorios antes de enviar el formulario.");
         } else {
             // Enviar el evento de conversión a Google Analytics
@@ -51,29 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 'event_label': 'Envío del formulario',
                 'value': 1
             });
-
-            // Crear un objeto FormData para enviar los datos del formulario
-            const formData = new FormData(form);
-
-            // Configurar la solicitud Fetch
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Redirigir a la página de confirmación si la solicitud fue exitosa
-                    window.location.href = '/confirmacion.html'; // Cambia esta URL a la de tu página de confirmación
-                } else {
-                    alert("Hubo un problema con el envío del formulario. Por favor, inténtelo de nuevo.");
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert("Hubo un problema con el envío del formulario. Por favor, inténtelo de nuevo.");
-            });
         }
     });
 });
-
-
