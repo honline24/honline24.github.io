@@ -92,14 +92,72 @@ footer p{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
 }
+.intro {
+    max-width: 800px; /* Limita el ancho máximo del div */
+    margin: 0 auto; /* Centra el div en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    text-align: center;
+    color: #6B8E7E;
+    margin-bottom: 20px;
+}
+.intro h3 {
+    text-align: center;
+    color: black;
+   
+}
+
+.intro .section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #6B8E7E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .section h2 {
+    color: #6B8E7E;
+}
+.resalta{
+    font-weight: bold;
+}
+.intro .section p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.intro .section a {
+    color: #6B8E7E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro .section a:hover {
+    text-decoration: underline;
+}
 
 .contact-form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 90%;
     box-sizing: border-box;
+    margin-top: 20px;
+    align-self: center;
 }
 
 .contact-form h2 {
@@ -236,4 +294,3 @@ footer p{
     width: 100%;
 }
 }
-

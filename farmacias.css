@@ -92,6 +92,57 @@ footer p{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
 }
+.intro {
+    max-width: 800px; /* Limita el ancho máximo del div */
+    margin: 0 auto; /* Centra el div en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.intro-image {
+    width: 100%; /* Ancho completo de la imagen */
+    max-width: 658px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas en la imagen */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.intro h2 {
+    color: #6B8E7E; /* Color del título */
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.intro p, .intro ul, .intro ol {
+    margin-bottom: 20px; /* Espaciado inferior */
+    line-height: 1.6; /* Altura de línea para legibilidad */
+}
+
+.intro ul, .intro ol {
+    padding-left: 20px; /* Espaciado a la izquierda para listas */
+}
+
+.intro li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.intro strong {
+    color: #6B8E7E; /* Color para destacar texto */
+}
+
+.intro h3 {
+    color: #333; /* Color de los subtítulos */
+    font-size: 20px; /* Tamaño de fuente de los subtítulos */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
 
 .contact-form {
     background-color: #fff;

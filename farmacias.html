@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ9VH7SXX4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NQ9VH7SXX4');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minumum-scale:1.0">
+    <title>Honline - Telemedicina</title>
+    <link rel="stylesheet" href="farmacias.css">
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+<div class="contenedorglobal">
+    <header class="header">
+        <input type="checkbox" id="bar">
+        <label for="bar" class="icon-menu3"> <a href="#" class="tit"></a></label>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/HOLINE1.png" alt="Honline Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consulta.html">Consulta online</a></li>
+                    <li><a href="articulos.html">Artículos</a></li>
+                    <li><a href="infomacion.html">Información</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="flexcontainer">
+        <div class="intro">
+            <img src="imagenes/farmacias.jpg" alt="Farmacia y telemedicina" class="intro-image">
+            <h2>Únete a nuestra red de farmacias y aumenta tus ventas con nuestro servicio de telemedicina</h2>
+            <p>En un mundo donde la conveniencia y la atención al cliente son claves, estamos buscando farmacias que deseen expandir su negocio ofreciendo un servicio integral de envíos a domicilio. Al unirte a nuestra plataforma de telemedicina, tendrás la oportunidad de recibir recetas electrónicas directamente y gestionar el envío de medicamentos a los domicilios de los pacientes, con el pago ya realizado por adelantado.</p>
+            
+            <h3>Beneficios de unirte a nuestra red:</h3>
+            <ul>
+                <li><strong>Aumento de Ventas:</strong> Al recibir un flujo constante de recetas electrónicas de nuestros pacientes, tu farmacia verá un incremento en las ventas, aprovechando una base de clientes que prioriza la comodidad y la rapidez en la obtención de sus medicamentos.</li>
+                <li><strong>Comodidad para Clientes de Nuestra Plataforma:</strong> Ofrece a los clientes de nuestra plataforma de telemedicina la comodidad de recibir sus medicamentos directamente en sus hogares, sin necesidad de desplazarse. Este beneficio exclusivo mejora la satisfacción del cliente y fomenta la fidelización hacia tu farmacia a través de nuestra red.</li>
+                <li><strong>Procesos Simplificados:</strong> Con nuestras recetas electrónicas, los procesos son más ágiles y seguros. El pago por adelantado asegura que no tengas que preocuparte por cobros pendientes, facilitando una experiencia sin complicaciones tanto para ti como para el cliente.</li>
+                <li><strong>Expansión de Mercado:</strong> Al asociarte con nuestra plataforma de telemedicina, tendrás acceso a un público más amplio y diverso, aumentando la visibilidad de tu farmacia y atrayendo nuevos clientes que valoran la eficiencia y el servicio al cliente.</li>
+            </ul>
+        
+            <h3>Requisito esencial:</h3>
+            <p>Para unirte a nuestra red, es imprescindible que tu farmacia cuente con un servicio de envío a domicilio. Este servicio es fundamental para garantizar que los pacientes puedan recibir sus medicamentos de manera rápida y segura, directamente en sus hogares.</p>
+        
+            <h3>Cómo Funciona:</h3>
+            <ol>
+                <li><strong>Recepción de Recetas:</strong> Las recetas se envían directamente desde nuestra plataforma de telemedicina a tu farmacia.</li>
+                <li><strong>Preparación del Pedido:</strong> Preparas los medicamentos según la receta recibida.</li>
+                <li><strong>Envío a Domicilio:</strong> Gestionas el envío del medicamento al domicilio del paciente, asegurando una entrega rápida y segura.</li>
+                <li><strong>Pagos Garantizados:</strong> El pago del medicamento ya está realizado, lo que garantiza la transacción y elimina cualquier riesgo de impago.</li>
+            </ol>
+        
+            <p>Al unirte a nuestra red de farmacias, estarás brindando un servicio innovador que no solo te permitirá crecer en ventas, sino también fidelizar a tus clientes al ofrecerles la comodidad que están buscando.</p>
+        </div>
+        
+       <div class="contact-form">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm" action="https://formspree.io/f/xovadpyn" method="POST">
+            <label for="nombre de la">Nombre de la Farmacia:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="ubicacion">Provincia y Ciudad:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="mensaje">Danos más información sobre tu farmcia:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <div class="botonenviar"><button type="submit" id="submitButton">Enviar</button></div>
+        </form>
+      </div>
+    </div>
+    <footer> 
+        <p>&copy; 2024 Honline. Todos los derechos reservados.</p>
+    </footer>
+    <script src="contactoscript.js"></script>
+</div>  <!-- contenedor global--> 
+</body>
+</html>

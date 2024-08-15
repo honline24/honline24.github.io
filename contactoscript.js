@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
             form.apellido,
             form.telefono,
             form.email,
-            form.mensaje
+            form.mensaje,
+            form.mensaje2,
+            form.matricula,
+            form.direccion,
+            form.ubicacion
         ];
 
         const isValid = requiredFields.every(field => field.value.trim() !== '');
