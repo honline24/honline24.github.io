@@ -92,13 +92,91 @@ footer p{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
 }
+.intro {
+    width: 60%; /* Limita el ancho máximo del div */
+    margin: 0 auto; /* Centra el div en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: #333; /* Color del texto */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.imagen{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.imagen img{
+    width: 80%;
+    height: auto;
+}
+.intro h1 {
+    font-size: 1.5em;
+    color: #6B8E7E;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    color: #6B8E7E;
+    margin-bottom: 15px;
+}
+
+.intro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.intro ul li {
+    margin-bottom: 15px;
+    border: 1px solid #6B8E7E;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.intro ul li h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro ul li p {
+    margin: 0;
+}
+
+.intro strong {
+    font-weight: bold;
+}
+
+.resalta{
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
 
 .contact-form {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    width: 60%;
     box-sizing: border-box;
 }
 
@@ -170,7 +248,7 @@ footer p{
         z-index: 100000;
     }
     header{
-        height: 20px;
+        height: 0px;
         top:0;
         z-index: 10;
         position: relative;
@@ -223,9 +301,13 @@ footer p{
     .contact-form {
         padding: 15px;
         width: 90%;
-        margin-top: 50px;
+        margin-top: 10px;
     }
-
+.intro{
+    padding: 15px;
+        width: 90%;
+        margin-top: 50px;
+}
     .contact-form input, .contact-form textarea {
         padding: 8px;
     }
@@ -237,4 +319,3 @@ footer p{
     width: 100%;
 }
 }
-

@@ -359,6 +359,7 @@ header{
     z-index: 10;
     position: relative;
     border:hidden;
+    border: solid white;
 }
 
 .container{

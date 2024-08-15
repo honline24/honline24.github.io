@@ -241,6 +241,7 @@ footer p{
         top:0;
         z-index: 10;
         position: relative;
+        border: solid white;
     }
     
     .container{
